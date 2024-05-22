@@ -9,6 +9,8 @@ The final result will be the transformed string.
 *
 * */
 
+import java.util.Stack;
+
 public class ConsecutivePairs
 {
     public String solve(String A)
@@ -50,7 +52,7 @@ public class ConsecutivePairs
 
         while(!stk.isEmpty())
         {
-            sb.append(stk.pop().toString);
+            sb.append(stk.pop().toString());
         }
 
          return  sb.reverse().toString();
